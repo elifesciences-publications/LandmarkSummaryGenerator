@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="491.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="landmarksummarygenerator.LandmarkSummaryGeneratorController">
+   <children>
+      <Button fx:id="addDatasetButton" layoutX="13.0" layoutY="328.0" mnemonicParsing="false" onAction="#addLandmarkDataset" prefHeight="26.0" prefWidth="169.0" text="Add dataset" />
+      <Button fx:id="removeDatasetButton" layoutX="193.0" layoutY="328.0" mnemonicParsing="false" onAction="#removeLandmarkDataset" prefHeight="26.0" prefWidth="228.0" text="Remove selected dataset" />
+      <ListView fx:id="datasetListView" layoutX="12.0" layoutY="37.0" prefHeight="281.0" prefWidth="410.0" />
+      <Button fx:id="summarizeDatasetsButton" disable="true" layoutX="121.0" layoutY="453.0" mnemonicParsing="false" onAction="#summarizeLandmarkDatasets" prefHeight="26.0" prefWidth="299.0" text="Summarize dataset and write to file" />
+      <Label layoutX="15.0" layoutY="12.0" text="Landmark datasets:" />
+      <Label layoutX="15.0" layoutY="373.0" text="Landmark definition:" />
+      <Button fx:id="loadLandmarkButton" layoutX="193.0" layoutY="402.0" mnemonicParsing="false" onAction="#loadLandmarkDefinition" prefHeight="26.0" prefWidth="228.0" text="Load landmark definition" />
+      <Label fx:id="landmarkDefinitionLabel" layoutX="193.0" layoutY="373.0" prefHeight="16.0" prefWidth="228.0" text="undefined" />
+      <Button fx:id="infoButton" layoutX="377.0" layoutY="9.0" mnemonicParsing="false" onAction="#infoButtonAction" text="About">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
